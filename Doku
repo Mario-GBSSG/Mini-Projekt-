@@ -15,3 +15,10 @@
    Mit folgendem Befehl das eigene Image erstellen:  
    ```sh
    docker build -t "mein-apache-image" 
+5. **Lokales Log-Verzeichnis anlegen**
+   Ein Verzeichnis für die Logs anlegen, um sie extern zu speichern.
+6. **Container starten**
+   docker run -d -p 8080:80 \
+-v /home/vmadmin/mein-apache-projekt/logs:/usr/local/apache2/logs \
+-v /home/vmadmin/public-html:/usr/local/apache2/htdocs \
+--name mein-webserver mein-apache-image
