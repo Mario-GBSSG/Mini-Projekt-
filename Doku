@@ -1,0 +1,17 @@
+# Webserver mit Webseite
+
+## Schritte zur Einrichtung
+
+1. **Passendes Image finden**  
+   Das offizielle Apache-Image auf [hub.docker.com](https://hub.docker.com) suchen.  
+
+2. **Dockerfile erstellen**  
+   Eine eigene `Dockerfile`-Datei anlegen und konfigurieren.  
+
+3. **HTML-Datei vorbereiten**  
+   Eine `index.html` erstellen und im Verzeichnis `/public-html` speichern.  
+
+4. **Docker-Image bauen**  
+   Mit folgendem Befehl das eigene Image erstellen:  
+   ```sh
+   docker build -t "mein-apache-image" 
